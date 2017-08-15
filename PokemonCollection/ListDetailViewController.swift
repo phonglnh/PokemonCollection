@@ -9,12 +9,11 @@
 import UIKit
 
 class ListDetailViewController: UIViewController {
-
+    
     @IBOutlet weak var listDetailCollectionView: UICollectionView!
     
     var arrPokemon: [Pokemon]!
     var indexPokeSelected: Int!
-    
     let pokeType = {(poke: Pokemon) -> (String) in
         switch poke.type {
         case "F":
@@ -31,7 +30,6 @@ class ListDetailViewController: UIViewController {
             return "🌎"
         }
     }
-    
     let detailCellScaling: CGFloat = 0.8
     
     override func viewDidLoad() {
