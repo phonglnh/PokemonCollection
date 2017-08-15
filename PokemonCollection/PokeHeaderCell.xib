@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokeHeaderCell" id="KGk-i7-Jjw" customClass="PokeHeaderCell" customModule="PokemonCollection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJJ-7V-jcV">
+                        <rect key="frame" x="231" y="0.0" width="81" height="43.5"/>
+                        <state key="normal" title="SEE ALL &gt;&gt;">
+                            <color key="titleColor" red="0.00084268400849999998" green="0.62581297589999996" blue="0.14051166700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="seeAllButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="E1x-fb-9VX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-Tr-uj5">
+                        <rect key="frame" x="5" y="3" width="44" height="37.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.00084268400850170857" green="0.62581297587360396" blue="0.14051166697999734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="8Dw-Tr-uj5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="30I-EX-dCP"/>
+                    <constraint firstAttribute="trailing" secondItem="oJJ-7V-jcV" secondAttribute="trailing" constant="8" id="InA-yP-dul"/>
+                    <constraint firstItem="8Dw-Tr-uj5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="TdW-x8-nm7"/>
+                    <constraint firstAttribute="bottom" secondItem="8Dw-Tr-uj5" secondAttribute="bottom" constant="3" id="V1N-lf-43I"/>
+                    <constraint firstAttribute="bottom" secondItem="oJJ-7V-jcV" secondAttribute="bottom" id="iQ5-Fh-8bA"/>
+                    <constraint firstItem="oJJ-7V-jcV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uOa-hn-KY4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="seeAllButton" destination="oJJ-7V-jcV" id="cgJ-mF-ZVa"/>
+                <outlet property="typeNameLabel" destination="8Dw-Tr-uj5" id="2mw-E5-LCX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
